@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0F4747">
+<title>曼谷 + 芭達雅 6 日 · 7/5 → 7/11 · 5 人專屬行程</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<!-- 載入外部 CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">A Field Notebook for Five</div>
+    <h1>曼谷 · 芭達雅 <span class="accent">專屬行程</span></h1>
+    <p class="subtitle">7/5 → 7/11 · 5 人 · 瘋狂購物、海鮮、跳島、Big C 採買</p>
+
+    <div class="flight-strip">
+      <div class="col">
+        <div class="lbl">Out · 7/5</div>
+        <div class="code">TPE → BKK</div>
+        <div class="meta">抵達 22:40</div>
+      </div>
+      <div class="arrow"><span class="plane">✈</span><span class="dur">行程</span></div>
+      <div class="col r">
+        <div class="lbl">Back · 7/11</div>
+        <div class="code">BKK → TPE</div>
+        <div class="meta">起飛 01:35</div>
+      </div>
+    </div>
+
+    <div class="countdown" id="countdown">
+      <div class="cd-cell"><span class="num" id="cd-d">--</span><span class="lbl">Days</span></div>
+      <div class="cd-cell"><span class="num" id="cd-h">--</span><span class="lbl">Hrs</span></div>
+      <div class="cd-cell"><span class="num" id="cd-m">--</span><span class="lbl">Min</span></div>
+      <div class="cd-cell"><span class="num" id="cd-s">--</span><span class="lbl">Sec</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="tabnav">
+  <div class="tabnav-inner">
+    <button class="tab-btn active" data-tab="overview"><span class="tnum">01</span>概覽</button>
+    <button class="tab-btn" data-tab="map"><span class="tnum">02</span>地圖</button>
+    <button class="tab-btn" data-tab="prep"><span class="tnum">03</span>行前</button>
+    <button class="tab-btn" data-tab="itinerary"><span class="tnum">04</span>行程</button>
+    <button class="tab-btn" data-tab="hotel"><span class="tnum">05</span>住宿</button>
+    <button class="tab-btn" data-tab="transit"><span class="tnum">06</span>交通</button>
+    <button class="tab-btn" data-tab="food"><span class="tnum">07</span>美食</button>
+    <button class="tab-btn" data-tab="budget"><span class="tnum">08</span>預算</button>
+  </div>
+</nav>
+
+<main>
+  <!-- OVERVIEW -->
+  <section id="overview" class="tab-content active">
+    <h2 class="section-title">五人團的全貌</h2>
+    <div class="section-sub">Trip at a glance</div>
+
+    <div class="summary-grid">
+      <div class="summary-cell"><div class="k">Days</div><div class="v">6<small>天 5 夜</small></div></div>
+      <div class="summary-cell"><div class="k">People</div><div class="v">5<small>人同行</small></div></div>
+      <div class="summary-cell"><div class="k">Cities</div><div class="v">2<small>曼谷+芭達雅</small></div></div>
+      <div class="summary-cell"><div class="k">Focus</div><div class="v">買<small>+吃+玩水</small></div></div>
+    </div>
+
+    <div class="theme-row">
+      <span class="theme-tag spice">🍜 爆吃美食</span>
+      <span class="theme-tag">🛍 瘋狂購物</span>
+      <span class="theme-tag ocean">🏝 包團跳島</span>
+      <span class="theme-tag gold">🛒 Big C 掃貨</span>
+    </div>
+
+    <div class="card">
+      <div class="card-title">行程設計邏輯</div>
+      <p style="margin-bottom:10px">完全根據您的清單打造：<strong style="color:var(--jade)">曼谷前 3 天主攻暹羅商圈與朱拉隆功美食 → 芭達雅 2 天玩水與海鮮 → 最後 1 天回曼谷 Big C 大採買直奔機場。</strong></p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">節奏大綱</div>
+      <div class="timeline">
+        <div class="tl-day">
+          <div class="tdate">Day 1 · 7.05 <span class="region-tag bkk">BKK</span></div>
+          <div class="ttitle">夜抵曼谷</div>
+          <div class="tdesc">22:40 抵達 → 入住 Nana 站附近 Airbnb</div>
+        </div>
+        <div class="tl-day">
+          <div class="tdate">Day 2 · 7.06 <span class="region-tag bkk">BKK</span></div>
+          <div class="ttitle">暹羅商圈血拼 + 喬德夜市</div>
+          <div class="tdesc">Siam 小店巡禮 (Frank Garcon 等) → CentralWorld → Jodd Fairs</div>
+        </div>
+        <div class="tl-day">
+          <div class="tdate">Day 3 · 7.07 <span class="region-tag bkk">BKK</span></div>
+          <div class="ttitle">經典船麵 + 恐龍博物館 + 朱拉美食夜</div>
+          <div class="tdesc">Baan Kuay Tiew Ruathong → 侏羅紀 → Jeh O Chula / 朱拉夜市</div>
+        </div>
+        <div class="tl-day pty">
+          <div class="tdate">Day 4 · 7.08 <span class="region-tag pty">PTY</span></div>
+          <div class="ttitle">前進芭達雅 + 海鮮大餐</div>
+          <div class="tdesc">包車南下 → 芭達雅水上市場 → 入住 Rim Apartment → 蘭普海鮮市場</div>
+        </div>
+        <div class="tl-day pty">
+          <div class="tdate">Day 5 · 7.09 <span class="region-tag pty">PTY</span></div>
+          <div class="ttitle">包團水上活動</div>
+          <div class="tdesc">出海跳島與水上活動 (17:00 結束) → 晚上市區放鬆或看秀</div>
+        </div>
+        <div class="tl-day">
+          <div class="tdate">Day 6 · 7.10 - 7.11 <span class="region-tag pty">PTY</span> <span class="region-tag bkk">BKK</span></div>
+          <div class="ttitle">曼谷 Big C 大掃貨 + 凌晨搭機</div>
+          <div class="tdesc">包車回曼谷 → Big C Ratchadamri 採買 → 曼谷市區按摩晚餐 → 晚間前往機場</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section id="map" class="tab-content">
+    <h2 class="section-title">我們的專屬地圖</h2>
+    <div class="section-sub">Google Maps Itinerary</div>
+    <div class="card">
+      <div class="card-title">📍 行程標記點</div>
+      <p style="margin-bottom: 15px; font-size: 13px;">這裡嵌入了 Google 地圖。如果想替換成您自己的清單，請在 Google Maps 分享清單時選擇「嵌入地圖」，並將代碼替換到 HTML 中。</p>
+      <div class="map-container">
+        <!-- 這裡放您的 Google 地圖 iframe，目前預設為曼谷市區 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124013.34444569502!2d100.45337255955038!3d13.724441584407005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d6032280d61f3%3A0x10100b25de24820!2z5rOw5ZyL5pu86LC3!5e0!3m2!1szh-TW!2stw!4v1700000000000!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREP -->
+  <section id="prep" class="tab-content">
+    <h2 class="section-title">行前準備</h2>
+    <div class="section-sub">Pre-departure checklist</div>
+    <div class="warning">
+      <div class="w-title">⚠ 出發前 72 小時必做：5 人都要填 TDAC</div>
+      <p>外國旅客強制必填（紙本 TM6 已廢止）。<strong>每人一張</strong>。<br>
+      請準備好：5 人各自的護照、航班資訊、<strong style="color:var(--spice)">Airbnb 英文地址與 Rim Apartment 地址</strong>。</p>
+    </div>
+    <div class="cl-section">
+      <h3>📋 必備項目 <span class="progress" data-progress="docs">0/0</span></h3>
+      <div data-cat="docs">
+        <div class="cl-item" data-id="d1"><div class="cl-check"></div><div class="cl-text">5 人護照效期均 6 個月以上</div></div>
+        <div class="cl-item" data-id="d2"><div class="cl-check"></div><div class="cl-text">5 人都填寫 TDAC 入境系統</div></div>
+        <div class="cl-item" data-id="d3"><div class="cl-check"></div><div class="cl-text">截圖 Airbnb 英文地址 + 芭達雅飯店訂房紀錄</div></div>
+        <div class="cl-item" data-id="d4"><div class="cl-check"></div><div class="cl-text">每人換妥泰銖現金與準備 eSIM</div></div>
+        <div class="cl-item" data-id="d5"><div class="cl-check"></div><div class="cl-text">Big C 採買必備：準備幾個堅固的大型環保購物袋！</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ITINERARY -->
+  <section id="itinerary" class="tab-content">
+    <h2 class="section-title">每日行程</h2>
+    <div class="section-sub">Custom tailored schedule</div>
+    <div id="day-cards"></div>
+  </section>
+
+  <!-- HOTEL -->
+  <section id="hotel" class="tab-content">
+    <h2 class="section-title">住宿資訊</h2>
+    <div class="section-sub">Where you sleep</div>
+    <div id="hotel-list"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d496961.6803605947!2d100.1028042!3d13.3183256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310297001e338787%3A0x358d1a094445934a!2sRim%20Apartment%20Pattaya!5e0!3m2!1szh-TW!2stw!4v1778680789941!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <!-- TRANSIT -->
+  <section id="transit" class="tab-content">
+    <h2 class="section-title">交通指南</h2>
+    <div class="section-sub">Getting around</div>
+    <div id="transit-content"></div>
+  </section>
+
+  <!-- FOOD -->
+  <section id="food" class="tab-content">
+    <h2 class="section-title">美食清單</h2>
+    <div class="section-sub">Your marked restaurants</div>
+    <div id="food-content"></div>
+  </section>
+
+  <!-- BUDGET -->
+  <section id="budget" class="tab-content">
+    <h2 class="section-title">預算追蹤</h2>
+    <div class="section-sub">Live expense log · 5 people</div>
+    <div id="budget-content"></div>
+  </section>
+
+</main>
+
+<!-- 載入外部 JS -->
+<script src="script.js" defer></script>
+</body>
+</html>

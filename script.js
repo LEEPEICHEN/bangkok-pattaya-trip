@@ -34,8 +34,8 @@ const days = [
     pty:false, num:'Day 1', date:'7/5', title:'夜抵曼谷', meta:'BKK · 入住 Nana',
     slots:[
       { time:'22:40', dur:'40min', title:'抵達曼谷機場', desc:'出示 TDAC 過海關、領行李，在機場換小額泰銖與開通 eSIM。', tags:['機場'], map:'Suvarnabhumi+Airport' },
-      { time:'23:30', dur:'45min', title:'搭車前往 Airbnb', desc:'<span class="em">5 人團強烈建議叫 Grab XL (7人座)</span>。直接把 Nana 站附近的 Airbnb 英文地址給司機。', tags:['交通'] },
-      { time:'00:30', dur:'-', title:'入住休息', desc:'第一晚剛抵達不排行程，若肚子餓可在 Nana 站附近 (Sukhumvit 11巷) 找宵夜小吃。', tags:['休息'], map:'BTS+Nana+Station' }
+      { time:'23:30', dur:'55min', title:'搭車前往 Airbnb', desc:'<span class="em">5 人團強烈建議叫 Grab XL (7人座)</span>。直接將 Airbnb 地址或 BTS Sena Nikhom (N12) 提供給司機導航。', tags:['交通'], map:'13.839194,100.573833' },
+      { time:'00:40', dur:'-', title:'入住休息', desc:'第一晚剛抵達不排行程，抵達 Sena Nikhom 站附近 Airbnb 後直接辦理入住並休息。若肚子餓，可先在附近便利商店簡單買宵夜。', tags:['休息'], map:'13.839194,100.573833' }
     ],
     tip:'<strong>機場進市區：</strong>一台 Grab XL 約 500-700 THB，比分兩台一般計程車更方便且不易走散。'
   },
@@ -147,11 +147,19 @@ if(dayWrap) {
 /* HOTELS */
 const hotels = [
   {
-    name:'Nana 站周邊 Airbnb', en:'Bangkok Airbnb', badge:'7/5 - 7/8', featured:false,
-    region:'曼谷市區', price:'已付', rec:'曼谷前三天住宿', total:'-',
-    desc:'您預訂的 Airbnb，位在 BTS Nana 站附近。',
-    pros:['交通便利','BTS 站旁'], map:'BTS+Nana+Station'
+    name:'Sena Nikhom 站周邊 Airbnb',
+    en:'Bangkok Airbnb',
+    badge:'7/5 - 7/8',
+    featured:false,
+    region:'BTS Sena Nikhom (N12)',
+    price:'已付',
+    rec:'曼谷前三天住宿',
+    total:'-',
+    desc:'步行約 3 分鐘即可抵達 BTS Sena Nikhom (N12) 站，位於 Sukhumvit 線北段。',
+    pros:['步行3分鐘到BTS','直達Siam商圈','5人入住'],
+    map:'13.839194,100.573833'
   },
+    
   {
     name:'Rim Apartment Pattaya', en:'Rim Apartment', badge:'7/8 - 7/10', featured:true,
     region:'芭達雅', price:'已預訂', rec:'芭達雅兩天住宿', total:'-',
@@ -183,7 +191,7 @@ if(transitContent) {
     <div class="transit-card">
       <h3><span class="num">01</span>機場 ⇄ 曼谷市區（5 人）</h3>
       <table class="transit-table">
-        <tr><td>Grab XL（7 人座）</td><td><span class="cost">500-700 THB / 車</span><br><strong>5 人團首選</strong>，一台搞定行李 + 全員直達 Nana。</td></tr>
+        <tr><td>Grab XL（7 人座）</td><td><span class="cost">600-1,000 THB / 車</span><br><strong>5 人團首選</strong>，一台搞定行李 + 全員直達 Sena Nikhom 站周邊 Airbnb。夜間抵達價格可能較高。</td></tr>
       </table>
     </div>
     <div class="transit-card">

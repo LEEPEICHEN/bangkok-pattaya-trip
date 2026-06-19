@@ -31,7 +31,7 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 /* DAYS  */
 const days = [
   {
-    pty:false, num:'Day 1', date:'7/5', title:'夜抵曼谷', meta:'BKK · 入住 Nana',
+    pty:false, num:'Day 1', date:'7/5', title:'夜抵曼谷', meta:'BKK · 入住 BTS Sena Nikhom (N12) 附近 Airbnb',
     slots:[
       { time:'22:40', dur:'40min', title:'抵達曼谷機場', desc:'出示 TDAC 過海關、領行李，在機場換小額泰銖與開通 eSIM。', tags:['機場'], map:'Suvarnabhumi+Airport' },
       { time:'23:30', dur:'55min', title:'搭車前往 Airbnb', desc:'<span class="em">5 人團強烈建議叫 Grab XL (7人座)</span>。直接將 Airbnb 地址或 BTS Sena Nikhom (N12) 提供給司機導航。', tags:['交通'], map:'13.839194,100.573833' },
